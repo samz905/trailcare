@@ -56,13 +56,13 @@ Goal: Train Gemma 3n to respond with structured step-by-step guidance
 
 Tools:
 
-Gemma 3n 2B or 4B
+Gemma 3n 2B
 
 Unsloth for efficient LoRA fine-tuning
 
 Prompt template:
 
-You're a first aid expert. Based on the emergency described, generate step-by-step JSON instructions with fields: step, title, description, and optional tag.
+You're a first aid expert. Based on the emergency described, generate step-by-step JSON instructions with fields: step, title, and description.
 
 Tasks:
 
