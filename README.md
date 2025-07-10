@@ -2,10 +2,6 @@
 
 A fine-tuned Gemma 3N (4B) model specialized in providing first-aid medical advice and emergency care guidance. This project leverages advanced multimodal capabilities to understand text, images, and audio inputs for comprehensive healthcare assistance.
 
-## 🚀 Project Overview
-
-This project demonstrates the power of fine-tuning Google's Gemma 3N model for specialized healthcare applications. The model has been trained on a comprehensive first-aid dataset to provide accurate, immediate medical guidance for common injuries and health conditions.
-
 ### Key Features
 
 - **Multimodal Support**: Handles text, images, and audio inputs
