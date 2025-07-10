@@ -208,7 +208,3 @@ For questions or issues:
 - Open an issue on GitHub
 - Check the Unsloth documentation
 - Review the Gemma model guidelines
-
----
-
-**Built with ❤️ for the Gemma Hackathon** 
