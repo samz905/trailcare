@@ -2,7 +2,7 @@
 
 A fine-tuned Gemma 3N (4B) model specialized in providing first-aid medical advice and emergency care guidance. This project leverages advanced multimodal capabilities to understand text, images, and audio inputs for comprehensive healthcare assistance.
 
-### Key Features
+## Key Features
 
 - **Multimodal Support**: Handles text, images, and audio inputs
 - **Specialized Medical Knowledge**: Fine-tuned on first-aid procedures and emergency care
@@ -10,7 +10,7 @@ A fine-tuned Gemma 3N (4B) model specialized in providing first-aid medical advi
 - **Mobile-Ready**: Designed for deployment with AI Edge for mobile applications
 - **Local Testing**: Integrated with Ollama for local model testing and development
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Fine-tuning**: Unsloth + LoRA (Low-Rank Adaptation)
 - **Base Model**: Gemma 3N (4B)
@@ -19,13 +19,13 @@ A fine-tuned Gemma 3N (4B) model specialized in providing first-aid medical advi
 - **Data Processing**: Custom ShareGPT format conversion
 - **Training Framework**: HuggingFace Transformers, PEFT, TRL
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - CUDA-compatible GPU (recommended: 8GB+ VRAM)
 - Ollama installed for local testing
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository**:
 ```bash
@@ -52,7 +52,7 @@ curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull gemma3n:e4b
 ```
 
-## 📊 Dataset
+## Dataset
 
 The project uses a comprehensive first-aid dataset covering:
 
@@ -70,7 +70,7 @@ The dataset is stored in two formats:
 - **Raw Format**: `raw_data/intents.json` - Intent-based classification format
 - **ShareGPT Format**: `processed_data/complete_manual_dataset_sharegpt.jsonl` - Conversational format for training
 
-## 🚀 Usage
+## Usage
 
 ### Local Testing with Ollama
 
@@ -101,7 +101,7 @@ python convert_to_sharegpt.py
 
 This script transforms the intent-based dataset into a conversational format suitable for fine-tuning.
 
-## 🧠 Model Capabilities
+## Model Capabilities
 
 ### Text-Based Queries
 ```python
@@ -133,7 +133,7 @@ messages = [{
 }]
 ```
 
-## 🔧 Fine-tuning Configuration
+## Fine-tuning Configuration
 
 The model uses the following LoRA configuration:
 - **Rank (r)**: 8 - Balance between accuracy and efficiency
@@ -142,7 +142,7 @@ The model uses the following LoRA configuration:
 - **Max Sequence Length**: 1024 tokens
 - **Vision Layers**: Frozen (language-only fine-tuning)
 
-## 📱 Mobile Deployment
+## Mobile Deployment
 
 The model is optimized for mobile deployment using AI Edge:
 
@@ -152,7 +152,7 @@ The model is optimized for mobile deployment using AI Edge:
 
 *(Detailed mobile deployment instructions coming soon)*
 
-## 🧪 Testing
+## Testing
 
 ### Sample Queries
 
@@ -163,7 +163,7 @@ Try these example queries with the model:
 - "How can I stop bleeding from a deep cut?"
 - "What are the signs of a sprained ankle?"
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 gemma-hackathon/
@@ -178,31 +178,31 @@ gemma-hackathon/
 └── README.md                      
 ```
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Medical Disclaimer**: This model provides general first-aid guidance only. Always consult healthcare professionals for serious medical conditions.
 - **GPU Requirements**: Fine-tuning requires a CUDA-compatible GPU with sufficient VRAM
 - **Training Time**: Full fine-tuning may take several hours depending on hardware
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Unsloth**: For providing efficient fine-tuning capabilities
 - **Google**: For the Gemma 3N base model
 - **Ollama**: For local model testing infrastructure
 - **HuggingFace**: For the transformers ecosystem
 
-## 📞 Support
+## Support
 
 For questions or issues:
 - Open an issue on GitHub
